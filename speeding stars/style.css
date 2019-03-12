@@ -1,0 +1,123 @@
+body
+{
+    background-color:lightgray;
+
+}
+
+.nav-main
+{
+    /* header bar does not move */
+    position: fixed;  
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    /* display items next to each other */
+    flex-wrap: wrap;
+    z-index: 1000;
+ 
+
+}
+
+.btn-toggle-nav
+{
+    width: 70px;
+    height: 100%;
+    background-image: url("alison.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+
+
+}
+
+.btn-toggle-nav:hover
+{
+opacity: 0.5;
+
+}
+
+.nav-main ul 
+{
+display: flex;
+/* display items in list side by side */
+flex-wrap:wrap;
+padding-left: 15px;
+}
+.nav-main ul li
+{
+list-style: none;
+line-height: 60px;
+}
+
+.nav-main ul li a
+{
+display: block;
+height: 100%;
+padding: 0 15px;
+text-transform: uppercase;
+text-decoration: none;
+color: darkgrey;
+font-family: Arial;
+font-size: 16px;
+justify-content: center;
+
+}
+
+.nav-sidebar
+{
+    /* side bar does not move */
+    position: fixed;
+    left: 8px;
+    bottom: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    padding: 0 5px;
+    background-color: black;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+}
+.nav-sidebar ul
+{
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+
+
+}
+.nav-sidebar ul li
+{
+line-height: 60px;
+list-style: none;
+
+}
+.nav-sidebar ul li span,.nav-sidebar ul li a
+{
+display: block;
+height: 60px;
+padding: 0 10px;
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+font-family: Arial;
+font-size: 16px;
+/* the text does not go under each other */
+white-space: nowrap;  
+/* the gamma of the item */
+opacity: 0;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover
+{
+background-color: darkslategrey;       
+
+}
+canvas
+{
+padding:10% 10% 10% 10%;
+
+}
